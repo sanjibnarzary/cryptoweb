@@ -69,7 +69,7 @@ switch ($algo) {
             <button type="submit" class="btn btn-primary right">Calculate</button>
 
         </form>
-        <div class="">
+        <div class="text-lg">
             <?php
                 echo 'The '.$algo.' of '.$num1.' and '.$num2.' is '.$result.'';
             ?>
