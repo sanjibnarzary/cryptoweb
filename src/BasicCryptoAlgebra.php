@@ -38,6 +38,12 @@
      * 
      */
     function mult_inv($b = 0, $m = 0){
+        if($b < 0){
+            $b = modulo((int)$b, (int)$m);
+        }
+        if($m < 0){
+            return '<span class="text-danger"> Error second number should not be less than 1</span>';
+        }
         $a1 = 1; $a2 = 0; $a3 = $m;
         $b1 = 0; $b2 = 1; $b3 = $b;
         $loop = true;
